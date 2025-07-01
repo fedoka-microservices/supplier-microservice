@@ -27,7 +27,7 @@ func (r *repository) Create(supplier *Supplier) error {
 
 // Delete implements Repository.
 func (*repository) Delete(id uint) error {
-	panic("unimplemented")
+	panic("chekcing")
 }
 
 // FindAll implements Repository.
