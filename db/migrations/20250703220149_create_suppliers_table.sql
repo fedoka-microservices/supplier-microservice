@@ -1,0 +1,14 @@
+-- +goose Up
+CREATE TABLE suppliers (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(100),
+  phone VARCHAR(20),
+  address VARCHAR(255),
+  rfc VARCHAR(13),
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- +goose Down
+DROP TABLE suppliers;
