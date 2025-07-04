@@ -1,2 +1,6 @@
 run go run main.go
-check if nats is avaiable under docker
+
+to run the db you need to have docker and execute 
+```
+docker compose up
+```
